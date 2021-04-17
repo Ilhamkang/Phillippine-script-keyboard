@@ -1,4 +1,4 @@
-# Philippines Script Keyboards
+# Philippines Input Method
 
 I created this repository to provide input method for Phillipines local scripts on Linux through the <a href="https://www.nongnu.org/m17n/">m17n Library</a>. The .mim files meant to be included to the /usr/share/m17n folder. To activate the keyboard, you need to install and run the iBus on your Linux system. Please visit https://github.com/ibus/ibus for more details.  
 
