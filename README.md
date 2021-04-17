@@ -8,5 +8,5 @@ The input method available at present are:
 * Tagbanwa - tbw-tagbanwa.mim (version 1.0)
 * Hanunuo - hnn-hanunuo.mim (version 1.0)
 
-The fonts for rendering the scripts correctly has been provided on the latest Linux distros. In case you could not find them on your system, please get them on the Google's Noto Fonts https://www.google.com/get/noto/.
+The fonts for correct scripts rendering have been provided on the latest Linux distros. In case you could not find them on your system, please get them on the Google's Noto Fonts https://www.google.com/get/noto/.
 
