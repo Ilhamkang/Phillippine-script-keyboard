@@ -1,0 +1,71 @@
+;; tl-baybayin.mim -- Baybayin scipt input method
+;; version 1.0
+
+;; Copyright (C) 2021 Ilham Nurwansah (ilhamnurwansah@gmail.com)
+
+;; This file is part of the m17n database; a sub-part of the m17n
+;; library.
+
+;; The m17n library is free software; you can redistribute it and/or
+;; modify it under the terms of the GNU Lesser General Public License
+;; as published by the Free Software Foundation; either version 2.1 of
+;; the License, or (at your option) any later version.
+
+;; The m17n library is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+;; Lesser General Public License for more details.
+
+;; You should have received a copy of the GNU Lesser General Public
+;; License along with the m17n library; if not, write to the Free
+;; Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+;; Boston, MA 02110-1301, USA.
+
+(input-method tl Baybayin)
+
+(description "Baybayin scipt input method with Latin keyboard layout")
+
+(title "ᜊᜌ᜔ᜊᜌᜒᜈ᜔")
+
+(map
+	(starter
+ 		("a") ("b") ("c") ("d") ("e") ("f") ("g") ("h") ("i")
+		("j") ("k") ("l") ("m") ("n") ("o") ("p") ("q") ("r")
+		("s") ("t") ("u") ("v") ("w") ("x") ("y") ("z")	("[")
+		("]") ("{") ("}") (";") ("1") ("2") ("3") ("4") ("5")
+		("6") ("7") ("8") ("9") ("0") ("A") ("B") ("C") ("D")
+		("E") ("F") ("G") ("H") ("I") ("J") ("K") ("L") ("M")
+		("N") ("O") ("P") ("Q") ("R") ("S") ("T") ("U") ("V")
+		("W") ("X") ("Y") ("Z") )	
+
+	(trans
+		("A"	"ᜀ")
+		("U"	"ᜂ")
+		("I"	"ᜁ")
+		("i"	"ᜒ")
+		("u"	"ᜓ")
+		("e"	"᜔")
+		("k"	"ᜃ")
+		("g"	"ᜄ")
+		("G"	"ᜅ")
+		("t"	"ᜆ")
+		("d"	"ᜇ")
+		("n"	"ᜈ")
+		("p"	"ᜉ")
+		("b"	"ᜊ")
+		("m"	"ᜋ")
+		("y"	"ᜌ")
+		("l"	"ᜎ")
+		("w"	"ᜏ")
+		("s"	"ᜐ")
+		("h"	"ᜑ")
+	)
+	(return
+		((Return)))
+	(backspace
+		((BackSpace) (undo)))
+)
+
+(state
+  (init
+    (trans)))

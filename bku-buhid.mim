@@ -1,0 +1,72 @@
+;; bku-buhid.mim -- Buhid scipt input method
+;; version 1.0
+
+;; Copyright (C) 2021 Ilham Nurwansah (ilhamnurwansah@gmail.com)
+
+;; This file is part of the m17n database; a sub-part of the m17n
+;; library.
+
+;; The m17n library is free software; you can redistribute it and/or
+;; modify it under the terms of the GNU Lesser General Public License
+;; as published by the Free Software Foundation; either version 2.1 of
+;; the License, or (at your option) any later version.
+
+;; The m17n library is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+;; Lesser General Public License for more details.
+
+;; You should have received a copy of the GNU Lesser General Public
+;; License along with the m17n library; if not, write to the Free
+;; Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+;; Boston, MA 02110-1301, USA.
+
+(input-method bku Buhid)
+
+(description "Buhid scipt input method with Latin keyboard layout")
+
+(title "ᝊᝓᝑᝒ")
+
+(map
+	(starter
+ 		("a") ("b") ("c") ("d") ("e") ("f") ("g") ("h") ("i")
+		("j") ("k") ("l") ("m") ("n") ("o") ("p") ("q") ("r")
+		("s") ("t") ("u") ("v") ("w") ("x") ("y") ("z")	("[")
+		("]") ("{") ("}") (";") ("1") ("2") ("3") ("4") ("5")
+		("6") ("7") ("8") ("9") ("0") ("A") ("B") ("C") ("D")
+		("E") ("F") ("G") ("H") ("I") ("J") ("K") ("L") ("M")
+		("N") ("O") ("P") ("Q") ("R") ("S") ("T") ("U") ("V")
+		("W") ("X") ("Y") ("Z") )	
+
+	(trans
+		("A"	"ᝀ")
+		("I"	"ᝁ")
+		("U"	"ᝂ")
+		("i"	"ᝒ")
+		("u"	"ᝓ")
+		("k"	"ᝃ")
+		("g"	"ᝄ")
+		("G"	"ᝅ")
+		("t"	"ᝆ")
+		("d"	"ᝇ")
+		("n"	"ᝈ")
+		("p"	"ᝉ")
+		("b"	"ᝊ")
+		("m"	"ᝋ")
+		("y"	"ᝌ")
+		("r"	"ᝍ")
+		("l"	"ᝎ")
+		("w"	"ᝏ")
+		("s"	"ᝐ")
+		("h"	"ᝑ")
+		
+	)
+	(return
+		((Return)))
+	(backspace
+		((BackSpace) (undo)))
+)
+
+(state
+  (init
+    (trans)))
